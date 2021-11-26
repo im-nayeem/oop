@@ -11,10 +11,7 @@ public:
 		Sname=name;
 		Sage=age;
 	}
-	void displayStudent()
-	{
-		cout<<Sname<<" "<<Sage<<endl<<endl;
-	}
+	
 
 	class Address
 		{
@@ -33,16 +30,25 @@ public:
 			}
 			
 		};	
+	Address x;
+	void displayStudent()
+	{
+		cout<<Sname<<" "<<Sage<<endl<<x.countryName<<" "<<x.houseNumber<<endl;
+	}
 };
 int main()
 {
-	Student ob;
-	ob.Set1("Nayeem",21);
-	ob.displayStudent();
+	
 
 	Student::Address obj;
 	obj.Set1("BD",202);
 	obj.displayStudent();
+
+	
+	Student ob;
+	ob.Set1("Nayeem",21);
+	ob.x.Set1("BD",203);
+	ob.displayStudent();
 	
 	return 0;
 }
