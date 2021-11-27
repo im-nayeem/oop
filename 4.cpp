@@ -29,9 +29,7 @@ public:
 
 	Subject operator+(Subject obj)
 	{
-		Subject temp;
-		temp.mark1=mark1+obj.mark1;
-		temp.mark2=
+		
 		return Subject(mark1+obj.mark1,mark2+obj.mark2);
 	}
 	
