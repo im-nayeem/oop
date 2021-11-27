@@ -15,12 +15,6 @@ public:
 		this->mark1=mark1;
 		this->mark2=mark2;
 	}
-	// Subject(Subject ob1,Subject ob2,Subject ob3)
-	// {
-	// 	mark1 = ob1.mark1+ob2.mark1+ob3.mark1;
-	// 	mark2 = ob1.mark2+ob2.mark2+ob3.mark2;
-	// }
-	
 
 	void display()
 	{
@@ -29,9 +23,7 @@ public:
 
 	Subject operator+(Subject obj)
 	{
-		Subject temp;
-		temp.mark1=mark1+obj.mark1;
-		temp.mark2=
+		
 		return Subject(mark1+obj.mark1,mark2+obj.mark2);
 	}
 	
